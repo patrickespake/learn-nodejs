@@ -1,0 +1,45 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', 'eyes' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/patrick/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose caching /home/patrick/projetos/learn-nodejs/parse_xml/node_modules/xml2js/package.json
+verbose cache add [ 'eyes', null ]
+silly cache add: name, spec, args [ undefined, 'eyes', [ 'eyes', null ] ]
+verbose parsed url { pathname: 'eyes', path: 'eyes', href: 'eyes' }
+verbose addNamed [ 'eyes', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'eyes', '', false ]
+verbose raw, before any munging eyes
+verbose url resolving [ 'https://registry.npmjs.org/', './eyes' ]
+verbose url resolved https://registry.npmjs.org/eyes
+http GET https://registry.npmjs.org/eyes
+http 408 https://registry.npmjs.org/eyes
+verbose bad json <html><title>Request timeout</title><body><h1>Request timeout</h1></body></html>
+ERR! registry error parsing json
+silly get cb [ 408, { 'content-type': 'text/html', 'content-length': '80' } ]
+ERR! Error: failed to fetch from registry: eyes
+ERR!     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+ERR!     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:153:14)
+ERR!     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:525:16)
+ERR!     at Request.emit (events.js:67:17)
+ERR!     at IncomingMessage.<anonymous> (/usr/lib/nodejs/request/main.js:484:14)
+ERR!     at IncomingMessage.emit (events.js:88:20)
+ERR!     at HTTPParser.onMessageComplete (http.js:137:23)
+ERR!     at CleartextStream.ondata (http.js:1150:24)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/patrick/projetos/learn-nodejs/parse_xml/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.2.0-31-generic
+ERR! command "node" "/usr/bin/npm" "install" "eyes"
+ERR! cwd /home/patrick/projetos/learn-nodejs/parse_xml
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message failed to fetch from registry: eyes
+verbose exit [ 1, true ]
